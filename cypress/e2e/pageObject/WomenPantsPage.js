@@ -52,13 +52,19 @@ class WomenPantsPage {
 
     checkoutBtn()
     {
-        return cy.get('.ng-tns-c33-15 > .bag-flyout-backdrop > .bag-flyout > .bag-flyout-footer > :nth-child(3) > button').click({force:true})
+        return cy.get('div.pg-navFlyout_column div.bag-flyout-backdrop div.bag-flyout div.bag-flyout-footer div:nth-child(3) > button:nth-child(1)').click({force:true})
     }
 
     checkoutTitle()
     {
         return cy.get(".pg-myBagProductList_title.my-bag-page-title")
     }
+
+    checkoutAsAGuestBtn()
+        {
+            return cy.get(".pg-myBagOrderSummary_buttons > :nth-child(2)")
+        }
+    
 
 
 

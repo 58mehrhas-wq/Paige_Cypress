@@ -57,5 +57,8 @@ describe('The very first Paige Test', () => {
 
     // Assert the Checkout Title page
     womenPantsPage.checkoutTitle().should('be.visible')
+
+    // Click on the Checkout as a Guest button
+    womenPantsPage.checkoutAsAGuestBtn().click()
    })
 })
